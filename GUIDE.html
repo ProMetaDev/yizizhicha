@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>一字之差 · 操作指南</title>
+<style>
+  :root {
+    --paper: #e6dbc6;
+    --dim: #b8ac97;
+    --blood: #9a3027;
+    --line: rgba(230, 219, 198, .18);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 40px 20px 80px;
+    background: radial-gradient(120% 90% at 50% 0%, #1b242a 0%, #0e1317 55%, #07090b 100%);
+    color: var(--paper);
+    font-family: "Songti SC", "Source Han Serif SC", "SimSun", serif;
+    line-height: 1.9;
+  }
+  .wrap { max-width: 700px; margin: 0 auto; }
+  .mono { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; letter-spacing: .06em; }
+  h1 { font-size: 26px; letter-spacing: .28em; font-weight: 500; margin: 0 0 6px; }
+  .sub { font-size: 11px; letter-spacing: .22em; color: var(--dim); }
+  .rule { height: 1px; background: var(--line); margin: 26px 0 34px; }
+  h2 {
+    font-size: 13px; letter-spacing: .26em; color: var(--dim); font-weight: 500;
+    margin: 42px 0 14px; display: flex; align-items: center; gap: 10px;
+  }
+  h2::before { content: ""; width: 20px; height: 1px; background: var(--blood); }
+  p { margin: 10px 0; font-size: 15px; }
+  ol, ul { margin: 10px 0; padding-left: 22px; font-size: 15px; }
+  li { margin: 7px 0; }
+  b { font-weight: 500; color: #fbf1de; }
+  .lead { font-size: 17px; line-height: 1.95; }
+  .dim { color: var(--dim); }
+  table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 14.5px; }
+  td { padding: 9px 10px; border-bottom: 1px dashed rgba(230,219,198,.14); vertical-align: top; }
+  td:first-child { width: 88px; color: #fbf1de; white-space: nowrap; }
+  .k { color: var(--blood); }
+  .foot { margin-top: 54px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 12px; color: var(--dim); }
+  @media (max-width: 560px) {
+    body { padding: 26px 16px 60px; }
+    h1 { font-size: 22px; }
+    p, ol, ul { font-size: 14.5px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>一字之差</h1>
+  <div class="sub mono">操作指南 · 试玩版</div>
+  <div class="rule"></div>
+
+  <p class="lead">光绪三十四年，临江埠。你是《临江日报》的夜班校对。六桩已经结案的旧闻，每一桩都被改掉了一个字——而每一版右下角的校对栏，签的都是你的名字。</p>
+
+  <h2>怎么打开</h2>
+  <ol>
+    <li>把压缩包<b>整个解压</b>出来，不要只把 index.html 拖出来。</li>
+    <li>双击 <b>index.html</b>，用 Chrome 或 Edge 打开。</li>
+    <li>戴上耳机，点「开始」。序章之后是一张试校小样——两张纸、一句话、一个错字，两分钟教会你怎么问、怎么划。随后登记一个名字，它会印在每一期的校对栏上。</li>
+  </ol>
+  <p class="dim">不需要联网，不需要安装任何东西。</p>
+
+  <h2>怎么操作</h2>
+  <table>
+    <tr><td>读案卷</td><td>点任意一份材料展开，点纸面收起。</td></tr>
+    <tr><td>案头</td><td>案卷下面还有一叠「与本案无涉」的碎纸，翻不翻都行，不影响判定。</td></tr>
+    <tr><td>质询</td><td>先点<b>一句证言</b>，再点<b>一张材料</b>，最后点「举证」。</td></tr>
+    <tr><td>追问</td><td>扣一支蜡烛，让证人多说一句。</td></tr>
+    <tr><td>卷宗</td><td>质询时随时可翻，查看手上和已收的全部材料。</td></tr>
+    <tr><td>划字</td><td><b>按住</b>那个字，横向<b>拖过去</b>。点一下不算。</td></tr>
+    <tr><td>补字</td><td>从三个铅字里挑一个，补进划掉的位置。</td></tr>
+    <tr><td>存档</td><td>右上角「<span class="k">档</span>」：三个手动槽，另有一份自动存档。</td></tr>
+    <tr><td>声音</td><td>右上角「<span class="k">声</span>」，可随时静音。</td></tr>
+    <tr><td>规则</td><td>右上角「<span class="k">规</span>」，随时查判定规则。</td></tr>
+  </table>
+
+  <h2>判定的规矩</h2>
+  <ul>
+    <li>五支蜡烛就是你的可信度。举证失败、划错字，各熄一支。烧完就出局。</li>
+    <li>每案四轮质询，然后一次结案辩论，最后在更正稿上选一个字。</li>
+    <li>三个字：<b>误</b>（本报误载）、<b>实</b>（本报失实）、<b>讹</b>（系属讹传）。没有一个是干净的。</li>
+    <li>每结一案，更正启事就长一句。六案写完，它长成一整篇——那就是第六案的头版，也是你能看到哪一种结局。</li>
+    <li>有些说法能站住，但站住的是错的。拿见报那套说法去举证，会多出一个「<b>就这么结</b>」。按它结，案子照样往下走，只是后面的案子和这一版都会跟着变。</li>
+  </ul>
+
+  <h2>要多久</h2>
+  <p>通关约 <b>40–60 分钟</b>。随时可以存档退出，下次从标题页「继续上次」接上。</p>
+
+  <h2>小提示</h2>
+  <ul>
+    <li>字太小：<b>Ctrl + 加号</b>放大，或按 <b>F11</b> 全屏。</li>
+    <li>没有声音：浏览器要求先点一下页面。点右上角「声」关掉再打开即可。</li>
+    <li>存档存在浏览器本地，清缓存或换设备就没了。</li>
+    <li>手机上也能玩，但划字和案卷在电脑上更顺手。</li>
+  </ul>
+
+  <h2>关于素材</h2>
+  <p class="dim">人物立绘、场景、物证、雨声、雷声与六段配乐，均由程序合成或 AI 生成，未使用第三方素材。</p>
+
+  <div class="foot mono">临江埠 · 光绪三十四年三月　｜　建议戴耳机，关灯</div>
+</div>
+</body>
+</html>
